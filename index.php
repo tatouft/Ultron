@@ -38,20 +38,20 @@
         <div class="title">Mr Grojean</div>
         <?php
             function PrintDir($path, $dir)
-	    {
+	        {
                 $fullPath = $path . "/" . $dir;
-		$files = scandir($fullPath);
+		        $files = scandir($fullPath);
 
                 foreach ($files as $value)
                 {
                     if(!is_dir($fullPath . "/" . $value))
                     {
                         $rootFiles[] = $value;
-		    }
-		    else if($value != "." && $value != "..")
-		    {
-                    	PrintDir($fullPath, $value);
-		    }
+                    }
+                    else if($value != "." && $value != "..")
+                    {
+                        PrintDir($fullPath, $value);
+                    }
                 }
 
                 if(count($rootFiles) > 0)
@@ -60,7 +60,7 @@
                     echo("<div class='content'>");
                     foreach ($rootFiles as $value)
                     {
-                        echo("<a href='" . $fullPath . "/" . $value . "'>" . $value . "</a>");
+                        echo("<a href='" . $fullPath . "/" . $value . "'>" . $value . "</a><br/>");
                     }
                     echo("</div>");
                 }
