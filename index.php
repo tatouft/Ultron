@@ -35,7 +35,7 @@
 	</style>
     </head>
     <body>
-        <div class="title">Mr Grojean</div>
+        <div class="title">M Grosjean</div>
         <?php
             function PrintDir($path, $dir)
 	        {
