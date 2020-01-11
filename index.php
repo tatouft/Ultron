@@ -1,7 +1,17 @@
 <html>
     <head>
-	<style>
-		div.title
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+        html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
+        h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
+        ul,ol {list-style:none;}
+        fieldset,img,hr {border:none;}
+        caption,th {text-align:left;}
+        table {border-collapse:collapse; border-spacing:0;}
+        td {vertical-align:top;}
+
+        div.title
 		{
 			text-align: center;
 			margin-left: auto;
@@ -111,43 +121,8 @@
 
             .title-frame .title
             {
-                font-size: 14px;
+                font-size: 18px;
                 padding: 1px;
-            }
-
-            .title-frame .title img.kome
-            {
-                height: auto;
-                width: 55%;
-                margin-left: 10px;
-                margin-right: 80px;
-                margin-top: 14px;
-            }
-
-            .title-frame
-            {
-                width: 800px;
-                margin-top: 0px;
-                margin-bottom: 10px;
-                height: 80px;
-                padding: 10px;
-                text-align: left;
-                background-color: #000000;
-                background-image: url('../images/LogoKome White.png');
-                background-position: right center;
-                background-repeat: no-repeat;
-                background-size: auto 90%;
-            }
-
-            .back
-            {
-                background-color: #C15E06;
-                min-height: 100%;
-                margin-bottom: 0px;
-                padding-bottom: 0px;
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
             }
 
             div.title
