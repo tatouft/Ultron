@@ -183,6 +183,7 @@
                         if($path_parts['extension'] == 'youtube')
                         {
                             $url = file_get_contents( $fullPath . "/" . $value);
+                            echo($path_parts['filename']);
                             echo($url);
                         }
                         else
