@@ -186,6 +186,12 @@
                             echo($path_parts['filename']);
                             echo($url);
                         }
+                        if($path_parts['extension'] == 'url')
+                        {
+                            $url = file_get_contents( $fullPath . "/" . $value);
+                            echo($path_parts['filename']);
+                            echo("<a href='" . $url . "'>" . $path_parts['filename'] . "</a><br/>");
+                        }
                         else
                         {
                             echo("<a href='" . $fullPath . "/" . $value . "'>" . $value . "</a><br/>");
