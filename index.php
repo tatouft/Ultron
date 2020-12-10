@@ -179,7 +179,16 @@
                     echo("<div class='content'>");
                     foreach ($rootFiles as $value)
                     {
-                        echo("<a href='" . $fullPath . "/" . $value . "'>" . $value . "</a><br/>");
+                        $path_parts = pathinfo($value);
+                        if($path_parts['extension'] == 'youtube')
+                        {
+                            $url = file_get_contents( $fullPath . "/" . $value);
+                            echo($url);
+                        }
+                        else
+                        {
+                            echo("<a href='" . $fullPath . "/" . $value . "'>" . $value . "</a><br/>");
+                        }
                     }
                     echo("</div>");
                 }
